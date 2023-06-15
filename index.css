@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left {
+    color: white;
+    text-align: center;
+    max-width: 20rem;
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.left p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.right {
+    max-width: 20rem;
+}
+
+.right h2 {
+    text-align: center;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: .5rem;
+    width: 20rem;
+    height: 4.5rem;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.right h2 span {
+    font-weight: 700;
+}
+
+.form-group {
+    background-color: white;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+#form {
+    padding: 1.3rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input:focus {
+    outline: 0;
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control img {
+    position: absolute;
+    top: 11px;
+    right: 18px;
+    visibility: hidden;
+}
+
+.form-control span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+}
+
+.form-control.success input {
+    border: 2px solid hsl(248, 32%, 49%) ;
+}
+
+.form-control.error input {
+    border: 2px solid hsl(0, 100%, 74%) ;
+}
+
+.form-control.error img {
+    visibility: visible;
+}
+
+.form-control.error span {
+    visibility: visible;
+}
+
+
+.button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.terms {
+    text-align: center;
+    padding: .7rem;
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+    line-height: 2;
+}
+
+.terms span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+@media all and (min-width:768px) {
+    .main {
+         display: flex;
+        flex-direction: row;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        text-align: left;
+        max-width: 25rem;
+    }
+
+    .left h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .left p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .right {
+        max-width: 28rem;
+        margin-top: 2rem;
+    }
+
+    .right h2 {
+        width: 28rem;
+        height: 3rem;
+    }
+
+    .terms {
+        font-size: 10px;
+    }
+}
+
+
+
+
